@@ -1,68 +1,83 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in">
+        <div class="container-fluid">
+            <h2 style="padding-right: 5%">Dealerships</h2>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarText"
+                aria-controls="navbarText"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-size: larger" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" style="font-size: larger" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" style="font-size: larger" href="/contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+  <div class="card" style="width: 80%; margin: 4% auto; border: none; border-radius: 14px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); overflow: hidden;">
+    <div class="banner" name="about-header" style="padding: 35px 40px; background-color:#1f2933; color:white;">
+      <h1 style="margin-bottom:15px; font-weight:600;">About Northstar Motors</h1>
+      Serving drivers across North America since 2008, Northstar Motors specializes in quality new and pre-owned vehicles from trusted domestic and international manufacturers. We believe buying a car should be simple, transparent, and built around the needs of each customer.
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin:auto; width:100%; justify-content:space-around; gap:20px; padding:30px; background-color:#fafafa;">
+
+      <div class="card" style="width: 30%; border:none; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.07); overflow:hidden;">
+        <img class="card-img-top" src="/static/person1.jpg" alt="Daniel Carter">
+        <div class="card-body" style="padding:22px;">
+          <p class="title" style="font-size:1.25rem; font-weight:600; color:#1f2933; margin-bottom:6px;">Daniel Carter</p>
+          <p style="color:#6b7280; margin-bottom:12px;">General Manager</p>
+          <p class="card-text" style="color:#4b5563;">
+            Daniel has spent more than 15 years in the automotive industry and has been leading the Northstar Motors team since 2019. He focuses on improving customer service, maintaining strong manufacturer relationships, and making sure the dealership runs smoothly every day.
+          </p>
+          <p style="color:#374151;">daniel.carter@northstarmotors.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="card" style="width: 30%; border:none; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.07); overflow:hidden;">
+        <img class="card-img-top" src="/static/person2.jpg" alt="Sophia Mitchell">
+        <div class="card-body" style="padding:22px;">
+          <p class="title" style="font-size:1.25rem; font-weight:600; color:#1f2933; margin-bottom:6px;">Sophia Mitchell</p>
+          <p style="color:#6b7280; margin-bottom:12px;">Sales Director</p>
+          <p class="card-text" style="color:#4b5563;">
+            Sophia joined Northstar Motors in 2016 and now leads our sales department. Known for her straightforward approach, she helps customers compare vehicles, understand their financing options, and find a car that fits both their lifestyle and budget.
+          </p>
+          <p style="color:#374151;">sophia.mitchell@northstarmotors.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="card" style="width: 30%; border:none; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.07); overflow:hidden;">
+        <img class="card-img-top" src="/static/person3.jpg" alt="Michael Reed">
+        <div class="card-body" style="padding:22px;">
+          <p class="title" style="font-size:1.25rem; font-weight:600; color:#1f2933; margin-bottom:6px;">Michael Reed</p>
+          <p style="color:#6b7280; margin-bottom:12px;">Service Manager</p>
+          <p class="card-text" style="color:#4b5563;">
+            Michael is an ASE-certified technician with more than a decade of experience in vehicle maintenance and diagnostics. He oversees our service department and ensures every vehicle receives a thorough inspection before it is delivered to a customer.
+          </p>
+          <p style="color:#374151;">michael.reed@northstarmotors.com</p>
         </div>
       </div>
+
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
 
 </html>
